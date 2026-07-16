@@ -86,11 +86,11 @@ This project aims to gain hands-on experience with:
 
 ### Planned Specifications
 
-- CPU:
-- RAM:
-- Storage:
-- Ethernet Ports:
-- Wi-Fi Adapter:
+- CPU: i5 6th - 8th generation
+- RAM: 16 GB 
+- Storage: 256-500GB SSD
+- Ethernet Ports: 2 built in OR install Network Interface Card (NIC)
+- Wi-Fi Adapter: USB Wifi Adapter (Will need to research compatibility with OpenWRT)
 
 ---
 
