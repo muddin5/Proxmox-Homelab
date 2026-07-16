@@ -71,6 +71,7 @@ This project aims to gain hands-on experience with:
 | Uptime Kuma | Service and network monitoring | Future |
 | Prometheus | Metrics collection and monitoring | Future |
 | Grafana | Metrics dashboards and visualization | Future |
+| Firefly III | Finance Tracking | Future |
 | Jellyfin | Media Server | Future |
 
 
