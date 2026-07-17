@@ -86,7 +86,7 @@ This project aims to gain hands-on experience with:
 
 ### Planned Specifications
 
-- CPU: i5 6th - 8th generation
+- CPU: Intel i5 6th - 8th generation
 - RAM: 16 GB 
 - Storage: 256-500GB SSD
 - Ethernet Ports: 2 built in OR install Network Interface Card (NIC)
@@ -98,13 +98,14 @@ This project aims to gain hands-on experience with:
 
 ## Step 1 — Purchase Mini PC
 
-- [ ] Research hardware
+- [x] Research hardware
 - [ ] Purchase mini PC
 - [ ] Install RAM (if needed)
 - [ ] Install SSD (if needed)
 - [ ] Install NIC (if needed)
 
 Notes:
+- 
 
 ---
 
