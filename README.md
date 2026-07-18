@@ -86,7 +86,7 @@ This project aims to gain hands-on experience with:
 
 ### Planned Specifications
 
-- CPU: Intel i5 6th - 8th generation
+- CPU: Intel i5 6th - 8th generation OR AMD Ryzen 5 2nd - 5th generation
 - RAM: 16 GB 
 - Storage: 256-500GB SSD
 - Ethernet Ports: 2 built in OR install Network Interface Card (NIC)
