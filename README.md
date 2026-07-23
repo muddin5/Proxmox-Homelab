@@ -45,10 +45,10 @@ This project aims to gain hands-on experience with:
                    Proxmox VE
                         │
         ┌───────────────┼────────────────┐
-        │               │                │
-   OPNsense VM     OpenWrt VM      AdGuard Home
- (Router/Firewall) (Wi-Fi AP)          LXC
-        │
+        │                                │
+   OPNsense VM                   AdGuard Home
+ (Router/Firewall)                     LXC
+        │     
      Private LAN
         │
   ┌─────┴──────────────┐
@@ -64,7 +64,7 @@ This project aims to gain hands-on experience with:
 |----------|---------|--------|
 | Proxmox VE | Hypervisor | Planned |
 | OPNsense | Router / Firewall | Planned |
-| OpenWrt | Wi-Fi Access Point | Planned |
+| OpenWrt | Wi-Fi Access Point | Cancelled |
 | AdGuard Home | DNS Filtering | Planned |
 | Ubuntu/Debian VM | General-purpose Linux server for Docker, testing, and development | Planned |
 | Docker | Container platform for self-hosted applications | Future |
@@ -99,13 +99,15 @@ This project aims to gain hands-on experience with:
 ## Step 1 — Purchase Mini PC
 
 - [x] Research hardware
-- [ ] Purchase mini PC
+- [x] Purchase mini PC
 - [ ] Install RAM (if needed)
 - [ ] Install SSD (if needed)
 - [ ] Install NIC (if needed)
 
 Notes:
-- 
+- Purchased a used HP PRODESK 400 G4 i5-8500T @ 2.1GHz, 16GB RAM with NO HDD/OS, will be supplying the PC with a used SSD from work
+- For cost, most likely will purchase a USB-Ethernet Adaptor to act as second ethernet port for router
+- Also for cost, will be abandonnning
 
 ---
 
@@ -144,7 +146,7 @@ Notes:
 
 ---
 
-## Step 5 — Deploy OpenWrt
+## Deploy OpenWrt (Abandoned Project)
 
 - [ ] Create VM
 - [ ] Configure AP Mode
@@ -152,8 +154,30 @@ Notes:
 - [ ] Test wireless clients
 
 Notes:
+## OpenWrt Hardware Evaluation
 
----
+While planning the wireless networking portion of my homelab, I evaluated using a USB Wi-Fi adapter with OpenWrt compatibility versus purchasing a dedicated travel router.
+
+### USB Wi-Fi Adapter Option
+- Researched USB Wi-Fi adapters with chipsets supported by OpenWrt.
+- Found that reliable adapters with good Linux/OpenWrt driver support typically cost around $35.
+- While functional, USB adapters introduce additional considerations such as driver compatibility, antenna performance, and reduced reliability compared to dedicated networking hardware.
+
+### GL.iNet Opal Alternative
+After comparing costs and capabilities, I selected the GL.iNet Opal travel router as the more practical solution.
+
+At approximately $40, the Opal provides:
+- A dedicated OpenWrt-based networking platform.
+- Built-in WireGuard/OpenVPN support.
+- Travel router functionality including repeater, access point, and router modes.
+- A more polished and reliable networking experience compared to using a USB Wi-Fi adapter.
+- Small form factor, which fits original goal of minimizing space requirements.
+
+The Opal can integrate with my existing homelab infrastructure by providing secure remote access through VPN connectivity and routing traffic to internal services such as DNS filtering through AdGuard Home/Pi-hole and other self-hosted services.
+
+### Decision
+The GL.iNet Opal was selected because it provided greater functionality, reliability, and ease of deployment for a similar cost compared to a USB Wi-Fi adapter. If I already had a compatible USB to Wifi adaptor on hand, this decision may have been different.  
+
 
 ## Step 6 — Deploy AdGuard Home
 
